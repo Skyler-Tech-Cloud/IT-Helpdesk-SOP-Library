@@ -11,6 +11,7 @@ This repository contains standard operating procedures (SOPs) and knowledge base
 ### 🌐 Network & Endpoint Troubleshooting
 * [SOP-201: VPN & Remote Access Connectivity Troubleshooting](./sops/VPN-Troubleshooting.md)
 * [SOP-202: Network Printer Spooler & Driver Resolution](./sops/Printer-Troubleshooting.md)
+* [SOP-203: Local Area Network & Wi-Fi Troubleshooting](sops/Network-Troubleshooting.md)
 
 ### 🛡️ End-User Security & Malware Isolation
 * [SOP-301: Endpoint Malware Triage & Network Isolation Protocol](./sops/Malware-Isolation-Protocol.md)

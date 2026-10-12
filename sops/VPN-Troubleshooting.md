@@ -33,3 +33,19 @@ If the connection still fails, open **Command Prompt as Administrator** and exec
 ipconfig /flushdns
 ipconfig /release
 ipconfig /renew
+
+### Step 4: Credential Manager Verification
+1. Verify if the user recently changed their domain password. An outdated cached credential in Windows Credential Manager will cause immediate authentication rejections.
+2. Open Windows Credential Manager ➔ Windows Credentials ➔ Remove any stored legacy entries related to the VPN server address.
+
+---
+
+## 3. Escalation Criteria
+* If all local steps fail and other users on the network are experiencing the same issue, escalate immediately to Network Infrastructure Tier 2 to check gateway status.
+* If individual authentication fails repeatedly despite a confirmed password reset, escalate to Identity & Access Management (IAM).
+
+---
+
+## 4. Documentation & Ticket Closure
+* Log all diagnostic steps taken in the IT ticketing system.
+* Document the resolution code and confirm user productivity before setting the ticket status to Resolved.

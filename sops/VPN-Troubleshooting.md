@@ -29,7 +29,7 @@
 
 ### Step 3: Network Adapter & DNS Flush (Command Line)
 If the connection still fails, open **Command Prompt as Administrator** and execute standard diagnostic commands:
-```cmd
+cmd
 ipconfig /flushdns
 ipconfig /release
 ipconfig /renew

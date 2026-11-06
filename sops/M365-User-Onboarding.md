@@ -165,5 +165,3 @@ def provision_users_from_csv(csv_filepath="Scripts/new_hires.csv"):
 
 if __name__ == "__main__":
     provision_users_from_csv()
-            "License": "Microsoft 365 Business Standard",
-            "Groups": ["SG-Service-

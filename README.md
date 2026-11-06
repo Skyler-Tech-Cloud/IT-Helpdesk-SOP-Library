@@ -17,5 +17,5 @@ This repository contains standard operating procedures (SOPs) and knowledge base
 * [SOP-301: Endpoint Malware Triage & Network Isolation Protocol](./sops/Malware-Isolation-Protocol.md)
 
 ### ⚡ Automation & Scripting
--  [Automation Engine: M365 User Provisioning Script](./Scripts/onboarding_automation.py)
-- [CSV: Sample New Hire Input Data](./Scripts/new_hires.csv)
+- [Automation Engine: M365 User Provisioning Script](./sops/onboarding_automation.py)
+- [Sample Data: New Hire CSV Template](./sops/new_hires.csv)

@@ -7,7 +7,7 @@
 ---
 
 ## 1. Identity Verification (Crucial Security Step)
-* **Never** reset a password or MFA method without verifying the user's identity via an out-of-band secure method (e.g., verifying their employee ID, direct manager confirmation, or a secure video/phone callback to their official office number).
+- **Never** reset a password or MFA method without verifying the user's identity via an out-of-band secure method (e.g., verifying their employee ID, direct manager confirmation, or a secure video/phone callback to their official office number).
 
 ---
 
@@ -30,6 +30,22 @@ If the user lost their phone or got a new device and cannot pass MFA:
 
 ---
 
-## 3. Documentation & Ticket Closure
-* Log the identity verification method used in the ticket notes.
-* Advise the user to test their login and confirm they can access corporate resources successfully before closing the ticket.
+## 3. Common Exceptions & Troubleshooting
+
+* **Immediate Re-Lockout Loop:** If an account locks out again immediately after a password reset, it is almost always caused by a background mobile device (smartphone mail app) or Outlook client caching old credentials. 
+  * *Resolution:* Instruct the user to temporarily close Outlook and disconnect/pause active email sync on mobile devices until the new password is updated everywhere.
+* **Risk-Based Sign-In Blocks:** If Entra ID flags the login as "Risky Sign-In" due to unusual location or travel patterns, a standard password reset may not clear the block.
+  * *Resolution:* Review the Entra ID Protection sign-in logs and dismiss user risk if identity is confirmed, or escalate to Tier 2.
+
+---
+
+## 4. Escalation Matrix
+
+* **Tier 1 (Helpdesk):** Out-of-band identity verification, account unblocking, temporary password generation, and MFA re-registration triggers.
+* **Tier 2 / SysAdmin:** Risk-based sign-in blocks, Azure AD Identity Protection alerts, persistent sync loops, or Conditional Access Policy overrides.
+
+---
+
+## 5. Documentation & Ticket Closure
+- Log the specific identity verification method and exception codes used in the ticket notes.
+- Advise the user to test their login and confirm they can access corporate resources successfully before closing the ticket.
